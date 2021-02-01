@@ -1,0 +1,96 @@
+
+.card-numbered {
+    display: flex;
+    min-height: 186px;
+    width: 546px;
+}
+
+.card-numbered__number {
+    flex-shrink: 0;
+    width: 106px;  
+    background-color: #082c4b;
+    padding: 44px 10px 10px;
+    font-weight: 900;
+    /* по макету такой шрифт */
+    /* font-family: "UniSansHeavyCaps", sans-serif; */
+    font-size: 41px;
+    color: rgb(124, 135, 147);
+    text-align: center;
+    border: 1px solid #d7dee9;
+    border-right: none;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+
+}
+
+.card-numbered__text-container {
+    padding: 19px 20px 37px 17px;
+    border-right: 1px solid #d7dee9;
+    border-top: 1px solid #d7dee9;
+    background-color: #fff;
+}
+
+.card-numbered__title {
+    font-weight: 300;
+    font-size: calc(16px + 9.4 * ((100vw - 320px) / (1920 - 320)));
+    color: rgb(124, 135, 147);
+    text-transform: uppercase;
+    margin-bottom: 12px;    
+}
+
+.card-numbered__description {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(124, 135, 147);
+  line-height: 1.4;
+   
+}
+
+@media(max-width: 1200px) {
+    .card-numbered{
+        width: 450px;
+        min-height: 159px;
+    }
+
+    .card-numbered__number{
+        width: 94px;
+        padding-top: 33px;
+ 
+    }
+
+    .card-numbered__text-container{
+        padding-bottom: 24px;
+        padding-top: 12px;
+    }
+
+    .card-numbered__title{
+        margin-bottom: 3px;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+
+
+}
+
+@media(max-width: 767px) {
+
+    .card-numbered__text-container{
+        padding-bottom: 12px;
+        padding-left: 11px;
+        padding-right: 14px;
+    }
+    .card-numbered__number {
+        width: 67px;
+        font-size: 33px;
+
+    }
+
+
+}
+
+@media(max-width: 359px) {
+    
+}

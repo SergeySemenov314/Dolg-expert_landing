@@ -1,0 +1,296 @@
+.menu-burger {
+    position: relative;
+    background-color: transparent;
+
+}
+
+.menu-burger_active {
+    width: 480px;
+    background-color: #09182b;
+
+}
+
+.menu-burger__switcher-container {
+    padding: 20px 40px 21px;
+
+}
+
+.menu-burger__switcher-container_active {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #757575;
+}
+
+.menu-burger__switcher {
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 11;
+
+}
+
+.menu-burger__switcher-line {
+    position: relative;
+    width: 41px;
+    height: 2px;
+    background-color: white;
+}
+
+
+.menu-burger__switcher-line::before {
+    position: absolute;
+    left: 0;
+    top: -14px;
+    content: '';
+    width: 41px;
+    height: 2px;
+    background-color: white;
+    -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+    transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+
+}
+
+.menu-burger__switcher-line::after {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    content: '';
+    width: 41px;
+    height: 2px;
+    background-color: white;
+    -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+    transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+
+}
+
+.menu-burger__switcher_active .menu-burger__switcher-line {
+    background-color: transparent;
+}
+
+.menu-burger__switcher_active .menu-burger__switcher-line::before {
+    left: 8px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    width: 25px;
+    height: 6px;
+    top: 0;
+
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.menu-burger__switcher_active .menu-burger__switcher-line::after {
+    left: 8px;
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    width: 25px;
+    height: 6px;
+    top: 0;
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.menu-burger__list-wrapper {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+    padding: 60px 40px 45px 40px;
+    background-color: inherit;
+}
+
+.menu-burger__list-wrapper_active {}
+
+.menu-burger__list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-burger__list li {
+    position: relative;
+    /* IE не поддерживает, надо менять!!!!!  Из-за этого возникает проблема переносом текста пунктов меню на телефоне*/
+    width: max-content;
+    padding-right: 8px;
+    margin-bottom: 37px;
+
+}
+
+.menu-burger__list li:last-child {
+    margin-bottom: 0;
+
+}
+
+.menu-burger__list a {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: color 0.25s ease-in;
+
+}
+
+.menu-burger__list a::before {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 31%;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(150, 194, 235);
+
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid #769bbf;
+    border-right: 1px solid #769bbf;
+    transform: rotate(45deg);
+
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+}
+
+.menu-burger__list a:hover {
+    color: rgb(150, 194, 235);
+}
+
+.menu-burger__list a:hover:before {
+    opacity: 1;
+
+}
+
+@media(max-width: 1776px) {
+    .menu-burger_active {
+        width: 450px;
+    }
+}
+
+
+
+/* @media(max-width: 1600px) {
+    .menu-burger_active {
+        width: 450px;
+    }
+} */
+
+
+
+@media(max-width: 1400px) {
+    .menu-burger_active {
+        width: 380px;
+    }
+}
+
+
+@media(max-width: 1200px) {
+
+    .menu-burger_active {
+        width: 321px;
+    }
+
+    .menu-burger__switcher-container{
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 21px;
+    }
+
+    .menu-burger__switcher-container_active{
+        padding-bottom: 8px;
+    }
+
+    
+
+    .menu-burger__switcher-line {
+        width: 37px;
+    }
+
+    .menu-burger__switcher-line::before {
+        width: 37px;
+        top: -11px;
+    }
+
+    .menu-burger__switcher-line::after {
+        width: 37px;
+        top: 11px;
+    }
+    
+
+    .menu-burger__list-wrapper {
+        padding: 23px 35px 21px 30px;
+
+    }
+
+    .menu-burger__list li {
+        margin-bottom: 29px;
+    }
+
+    .menu-burger__list a {
+        font-size: 17px;
+    }
+
+
+  
+
+}
+
+@media(max-width: 992px) {
+
+    .menu-burger_active {
+        width: 268px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .menu-burger_active {
+        width: 215px;
+    }
+
+    .menu-burger__switcher{
+        width: 33px;
+    }
+    .menu-burger__switcher-line {
+        width: 33px;
+    }
+
+    .menu-burger__switcher-line::before {
+        width: 33px;
+        top: -11px;
+    }
+
+    .menu-burger__switcher-line::after {
+        width: 33px;
+        top: 11px;
+    }
+
+    .menu-burger__switcher_active .menu-burger__switcher-line::before {
+        left: 4px;
+    }
+    .menu-burger__switcher_active .menu-burger__switcher-line::after {
+        left: 4px;
+    }
+
+    .menu-burger__list-wrapper {
+        padding: 14px 17px 16px 19px;
+    }
+
+    .menu-burger__list a {
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width: 359px) {}

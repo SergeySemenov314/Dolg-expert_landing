@@ -1,0 +1,193 @@
+.services-bg-out {
+    background-color: #09182b;
+}
+
+/* services__card-title */
+
+.services-bg-inner {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    background: url(../images/services/bg.jpg) no-repeat;
+    background-position: -41px -12px;
+    /* background-size: cover; */
+}
+
+
+.services {
+    padding-top: 134px;
+    padding-bottom: 479px;
+}
+
+.services__heading {
+    width: 496px;
+    color: white;
+    margin-bottom: 85px;
+}
+
+.services__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    margin: 0 15px 30px 15px;
+}
+
+
+.services__card-king-piece {
+    position: absolute;
+    /* Для экрана 1920 */
+    bottom: -96.5px;
+    left: -19px;
+
+}
+
+.services__card-pawn-piece {
+    position: absolute;
+    /* Для экрана 1920 */
+    bottom: -23.5%;
+    right: 16.5%;
+
+}
+
+
+.services__card-descrition {}
+
+@media(min-width: 1922px) {
+    .services__card-king-piece {
+        left: -27px;
+        bottom: -101.5px;
+    }
+
+    .services__card-pawn-piece {
+        right: 18.5%;
+    }
+
+}
+
+@media(max-width: 1918px) and (min-width: 1369px) {
+    .services__card-pawn-piece {
+        display: none;
+    }
+
+    .services__card-king-piece {
+        display: none;
+    }
+}
+
+@media(max-width: 1368px) {
+
+    .services-bg-inner {
+        background-position: -322px -12px;
+
+        /* background: url(../images/services/bg.jpg) no-repeat center;
+        background-position: auto;
+        background-size: cover; */
+
+
+    }
+
+    .services__card-king-piece {
+        bottom: -104.5px;
+        left: -24px;
+    }
+
+    .services__card-pawn-piece {
+        display: none;
+    }
+}
+
+@media(max-width: 1366px) and (min-width: 1281px) {
+    .services__card-king-piece {
+        display: none;
+    }
+}
+
+@media(max-width: 1280px) {
+    .services-bg-inner {
+        background-position: -368px -12px;
+    }
+
+    .services__card-king-piece {
+        bottom: -107.5px;
+        left: -34px;
+    }
+
+}
+
+@media(max-width: 1275px) {
+    .services__card-king-piece {
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 1200px) {
+
+    .services-bg-inner {
+        background-position: -368px 241px;
+    }
+
+    .services {
+        padding-top: 57px;
+        padding-bottom: 257px;
+    }
+
+    .services__heading {
+        margin-bottom: 40px;
+    }
+
+    .services__cards-container{
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+    .services-bg-inner {
+        background-position: -368px 162px;
+    }
+
+    .services {
+        padding-top: 35px;
+        padding-bottom: 214px;
+    }
+
+    .services__heading {
+        margin-bottom: 27px;
+    }
+}
+
+@media(max-width: 767px) {
+    .services-bg-inner {
+        background-image: none;
+    }
+
+    /* удалить  width: 100%;, после сборки стилей блок пременит то же самое */
+    .services__heading{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .services {
+        padding-top: 23px;
+        padding-bottom: 25px;
+    }
+
+    .services__card {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+  
+}
+
+@media(max-width: 359px) {
+    .services {
+        padding-bottom: 20px;
+    }
+ 
+}

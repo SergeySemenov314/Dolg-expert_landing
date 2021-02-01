@@ -1,0 +1,174 @@
+.modal{
+    display: none;
+}
+
+.modal__background {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.9);
+    -webkit-transition: opacity 400ms ease-in;
+   
+}
+
+
+.modal__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 95%;
+    max-width: 95%;
+
+
+}
+
+/* Универсальная обертка для модальных окон. Добавляется непосредственно элементу, который отображается */
+.modal-wrapper{
+    padding: 65px;
+    background-color: rgb(8, 44, 75);
+    border-radius: 13px;
+
+}
+
+.modal__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+
+
+.modal__close:hover {
+    opacity: 1;
+}
+
+.modal__close:before,
+.modal__close:after {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: white;
+
+}
+
+.modal__close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal__close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+.form-modal {
+    display: none;
+    padding: 50px;
+    background-color: rgb(8, 44, 75);
+    border-radius: 13px;
+}
+
+.form-modal__title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.form-modal__input-name-box {
+    margin-bottom: 50px;
+}
+
+.form-modal__input-tel-box {
+    margin-bottom: 34px;
+}
+
+.form-modal__consent-box {
+    margin-bottom: 40px;
+}
+
+.form-modal__order-btn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.video-modal{
+    display: none;
+}
+
+.video-modal__iframe{
+    width: 700px;
+    height: 395px;
+}
+
+@media(max-width: 992px) {
+
+    .video-modal__iframe{
+        width: 629px;
+
+    }
+
+    .modal-wrapper{
+        padding: 48px;
+    
+    }
+
+    .modal__close:before, .modal__close:after{
+        height: 26px;
+    }
+
+    .modal__close{
+        right: 12px;
+        top: 15px;
+    }
+  
+}
+
+
+
+
+@media(max-width: 767px) {
+
+    .modal__close:before, .modal__close:after {
+        height: 23px;
+    }
+
+    .modal__close{
+        right: 8px;
+    }
+
+    .video-modal__iframe {
+        width: 311px;
+        height: 330px;
+    }
+
+    .modal-wrapper {
+        padding: 52px 15px;
+    }
+
+    
+    
+}
+
+@media(max-width: 359px) {
+    .video-modal__iframe {
+        width: 273px;
+        height: 277px;
+    }
+    
+}
+

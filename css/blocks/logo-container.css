@@ -1,0 +1,78 @@
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container__img {
+    max-width: 57px;
+    margin-right: 17px;
+}
+
+.logo-container__text-box {     
+      
+}
+
+.logo-container__company-name {
+    font-size: 18px;
+    font-family: 'Trajan Pro 3', serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.logo-container__info {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Geometria', sans-serif;
+    color: rgb(211, 211, 211);
+}
+
+@media(max-width: 1400px) {
+    .logo-container__img {
+        width: 36px;
+    }
+
+    .logo-container__company-name {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    
+
+
+}
+
+
+@media(max-width: 1200px) {
+
+    .logo-container__img {
+        width: 26px;
+    }
+    .logo-container__company-name {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .logo-container__info {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+
+}
+
+@media(max-width: 767px) {
+
+    .logo-container__img {
+        margin-right: 10px;
+    }
+
+
+}
+
+@media(max-width: 359px) {
+    
+}

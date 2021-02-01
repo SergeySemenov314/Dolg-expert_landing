@@ -1,0 +1,89 @@
+
+.consent-box {
+    display: flex;
+    width: 279px;
+ 
+
+}
+
+.consent-box__checkbox-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 25px;
+    height: 26px;
+    border:2px solid #4b5c6b;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.consent-box__checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 21px;
+    height: 22px;
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.consent-box__svg{
+    position: absolute;
+    top: 17%;
+    left: 11%;
+    z-index: 3;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0;
+    transition:opacity 0.2s ease-in ;
+}
+
+
+.consent-box__checkbox:checked+.consent-box__svg{
+    opacity: 1;
+}
+
+
+.consent-box__label {
+    width: 233px;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(135, 137, 138);
+    line-height: 1;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 992px) {
+
+    .consent-box {
+        width: 257px;
+    }
+
+    .consent-box__label {
+        width: 230px;
+    }
+
+
+}
+
+@media(max-width: 767px) {
+
+
+}
+
+@media(max-width: 359px) {
+    
+}

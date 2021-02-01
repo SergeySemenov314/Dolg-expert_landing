@@ -1,0 +1,56 @@
+body{
+	font-family: 'Museo Sans Cyrl', sans-serif;;
+}
+
+.invisible {
+    display: none !important;
+}
+
+.container {
+        /* ширина контента+ падинги */
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+
+}
+
+/* ==================удалить */
+
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 992px) {
+
+
+}
+
+@media(max-width: 767px) {
+
+
+}
+
+@media(max-width: 359px) {
+    
+}

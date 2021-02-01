@@ -1,0 +1,42 @@
+.section-heading {
+    width: 855px;
+    font-family: 'Trajan Pro 3', serif;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+    /* font-size: 42px; */
+    font-size: calc(22px + 20 * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+ }
+
+ @media(min-width: 1921px) {
+   .section-heading {
+      font-size: 42px;
+   }
+
+}
+ 
+ 
+ @media(max-width: 992px) {
+    .section-heading {
+       width: 92%;
+    }
+ 
+    .individual-projects__info-text {
+       margin-bottom: 26px;
+    }
+ 
+    .individual-projects__second-slider {
+       margin-bottom: 31px;
+    }
+ }
+ 
+ @media(max-width: 767px) {
+    .section-heading {
+       width: 100%;
+    }
+ 
+    
+ }

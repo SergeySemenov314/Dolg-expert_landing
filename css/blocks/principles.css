@@ -1,0 +1,118 @@
+.principles-bg {
+    background-color: #e1efff;
+}
+
+.principles-container {
+    /* ширина контента+ падинги + отступы карточек */
+    max-width: 1222px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+
+.principles {
+    padding-top: 130px;
+    padding-bottom: 101px;
+}
+
+.principles__heading {
+    text-align: left;
+    width: 80%;
+    margin: 0;
+    margin-left: 26px;
+    margin-bottom: 49px;
+}
+
+.principles__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principles__card-numbered {
+    margin: 0 25px 50px;
+}
+
+
+@media(max-width: 1200px) {
+
+    .principles-container {
+        max-width: 970px;
+    }
+
+    .principles {
+        padding-top: 57px;
+        padding-bottom: 36px;
+    }
+
+    .principles__heading {
+        margin-left: 10px;
+        margin-bottom: 28px;
+    }
+
+    .principles__card-numbered {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 28px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    .principles-container {
+        max-width: 750px;
+    }
+
+    .principles {
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+
+    .principles__heading{
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .principles__cards-container{
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .principles-container {
+        max-width: none;
+    }
+
+    .principles {
+        padding-top: 23px;
+        padding-bottom: 35px;
+    }
+
+    .principles__heading {
+        margin-bottom: 17px;
+    }
+
+    .principles__card-numbered{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+
+
+}
+
+@media(max-width: 359px) {
+    .principles {
+        padding-bottom: 25px;
+    }
+
+    .principles__heading {
+        margin-bottom: 11px;
+    }
+
+    .principles__card-numbered {
+        margin-bottom: 10px;
+    }
+}

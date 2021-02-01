@@ -1,0 +1,76 @@
+
+.input-transparent-box {
+    position: relative;
+    width: 359px;
+
+}
+
+.input-transparent-box_modal{
+
+}
+
+.input-transparent-box__input {
+    display: block;
+    width: 100%;
+    padding: 0 10px 10px 28px;
+    border-bottom: 2px solid white;
+    font-weight: 100;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+      
+}
+
+.input-transparent-box__input::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.input-transparent-box__icon {
+    position: absolute;
+    left: 0.5%;
+    top: 6%;
+}
+
+@media(max-width: 1200px) {
+
+    .input-transparent-box {
+        width: 301px;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+    .input-transparent-box {
+        width: 191px;
+    }
+
+    .input-transparent-box__input{
+        font-size: 17px;
+    }
+
+    .input-transparent-box_modal{
+        width: 100%;
+    
+    }
+
+
+
+}
+
+@media(max-width: 767px) {
+
+    .input-transparent-box {
+        width: 257px;
+    }
+
+    .input-transparent-box_modal{
+        width: 100%;
+    
+    }
+
+
+}
+
+@media(max-width: 359px) {
+    
+}

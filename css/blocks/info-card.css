@@ -1,0 +1,128 @@
+.info-card {
+    position: relative;
+    z-index: 1;
+    width: 260px;
+    padding: 46px 19px 66px 19px;
+    outline: 1px solid #d2d2d8;
+    outline-offset: -10px;
+    background-color: #fff;
+    min-height: 328px;
+}
+
+.info-card::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%,100%);
+    height: 6px;
+    /* вычитаем отступы outline */
+    width: calc(100% - 20px);
+    background-color: #fff;
+
+}
+
+.info-card__title-wrapper {
+    display: flex;
+    align-items: center;
+    height: 69px;
+    margin-bottom: 24px;
+}
+
+.info-card__title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    font-family: 'Trajan Pro 3', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 1.333;
+    text-align: center; 
+}
+
+.info-card__description {
+    font-weight: 100;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 1.4;
+      
+}
+
+/* =================== темная тема info-card_dark =========================*/
+
+.info-card_dark{
+    background-color: #051428;
+    outline: 1px solid #374353;
+}
+
+.info-card_dark:before{
+    background-color: #242424;
+}
+
+.info-card_dark .info-card__title {
+    color:white;
+}
+
+.info-card_dark .info-card__description {
+    color:white;
+      
+}
+
+/* =================== info-card_big =========================*/
+
+.info-card_big{
+    width: 348px;
+}
+
+.info-card_big:before{
+    background-color: #f1f0f0;
+}
+
+.info-card_big .info-card__title-wrapper{
+    height: 63px;
+}
+
+
+.info-card_big .info-card__title {
+    font-size: 24px;
+}
+
+
+@media(max-width: 992px) {
+    .info-card_big {
+        width: 324px;
+    }
+}
+
+
+
+@media(max-width: 767px) {
+
+    .info-card {
+        padding-top: 30px;
+        padding-bottom: 36px;
+        min-height: 235px;
+
+    }
+
+    .info-card__title-wrapper{
+        margin-bottom: 20px;
+
+    }
+
+    .info-card__title{
+        width: 90%;
+
+    }
+
+    .info-card_big{
+        width: 260px;
+    }
+
+    .info-card_big .info-card__title {
+        font-size: 18px;
+    }
+
+}

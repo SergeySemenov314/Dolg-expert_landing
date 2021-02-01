@@ -1,0 +1,151 @@
+.prices-section-bg {
+    background-color: #f2f6f7;
+}
+
+.prices-section {
+    padding-top: 123px;
+    padding-bottom: 138px;
+ 
+}
+
+.prices-section__heading {
+    width: 937px;
+    margin-bottom: 31px;
+}
+
+.prices-section__subheading {
+    width: 873px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 300;
+    font-size: calc(17px + 7 * ((100vw - 320px) / (1920 - 320)));
+    color: rgb(61, 61, 61);
+    line-height: 1.417;
+  text-align: center;
+  margin-bottom: 34px;
+
+}
+
+.prices-section__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+}
+
+.prices-section__card-highlighted {
+    margin: 0 15px 30px;
+}
+
+.prices-section__card-highlighted-1 {
+    position: relative;
+    padding-bottom: 52px;
+}
+
+.prices-section__card-link-wrapper {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 50px);
+    text-align: center;
+}
+
+
+.prices-section__card-link {
+    display: inline;
+    font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
+    color: rgb(5, 104, 205);
+    border-bottom:2px solid rgb(5, 104, 205);
+    font-weight:300;
+    cursor: pointer;
+    transition: color 0.25s ease-in,
+                border-bottom 0.25s ease-in;
+
+}
+
+.prices-section__card-link:hover{
+    color:#0f4777;
+    border-bottom:2px solid#0f4777;
+}
+
+
+.prices-section__order-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media(max-width: 1200px) {
+
+    .prices-section {
+        padding-top: 57px;
+        padding-bottom: 57px;
+     
+    }
+
+    .prices-section__heading {
+        margin-bottom: 17px;
+    }
+
+    .prices-section__cards-container {
+        margin-bottom: 19px;
+
+    }
+
+}
+
+@media(max-width: 992px) {
+
+    .prices-section {
+        padding-top: 35px;
+        padding-bottom: 59px;
+     
+    }
+
+    .prices-section__heading{
+        width: 92%;
+        margin-bottom: 7px;
+    }
+
+    .prices-section__subheading{
+        width: 100%;
+    }
+
+    .prices-section__cards-container {
+        justify-content: center;
+        
+    }
+
+
+}
+
+@media(max-width: 767px) {
+
+    .prices-section {
+        padding-top: 23px;
+        padding-bottom: 55px;
+     
+    }
+
+    .prices-section__subheading{
+        margin-bottom: 22px;
+    }
+
+    .prices-section__card-highlighted{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media(max-width: 359px) {
+    .prices-section {
+        padding-bottom: 45px;
+     
+    }
+    
+}
